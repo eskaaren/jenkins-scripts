@@ -5,7 +5,8 @@ node {
   wrap([$class: 'AnsiColorBuildWrapper', colorMapName: 'xterm']) {
     wrap([$class: 'TimestamperBuildWrapper']) {
       
-// Load the next part from source control
+// Load the next part from source control:
+// sh "git clone your-repo || git pull || etc.."
 // load "cleanup_docker.groovy"
       
 import hudson.model.*
